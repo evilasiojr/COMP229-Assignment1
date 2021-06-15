@@ -7,7 +7,6 @@ let logger = require('morgan');
 
 let indexRouter = require('./routes/index');
 let usersRouter = require('./routes/users');
-const { dirname } = require('path');
 
 // create app configuration, setting and use.
 let app = express();
@@ -22,6 +21,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.static(path.join(__dirname, 'node_modules')));
+app.use('static', (express.static('public')));
 
 //As users type URL, slash will router will redirect to the indexRouter
 app.use('/', indexRouter);
