@@ -1,12 +1,25 @@
 {
-  "name": "assignment-2",
-  "version": "0.0.2",
+  "name": "assignment-1",
+  "version": "0.0.1",
   "private": true,
+  "description": "Assignments - Project",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/evilasiojr/COMP229-Assignment2.git"
+  },
+  "author": "Evilasio Junior",
+  "license": "ISC",
   "scripts": {
-    "start": "node ./server.js"
+    "start": "node index.js"
+  },
+  "engines": {
+    "node": "^14.0.0",
+    "npm": "^6.0.0"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.15.3",
+    "@popperjs/core": "^2.9.2",
     "bootstrap": "^5.0.1",
     "cookie-parser": "~1.4.4",
     "debug": "~2.6.9",
@@ -17,17 +30,9 @@
     "morgan": "~1.9.1",
     "popper.js": "^1.16.1"
   },
-  "description": "Project for COMP229 - Assignments",
-  "main": "index.js",
-  "devDependencies": {},
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/evilasiojr/COMP229-Assignment1.git"
-  },
-  "author": "Evilasio Junior",
-  "license": "ISC",
   "bugs": {
     "url": "https://github.com/evilasiojr/COMP229-Assignment1/issues"
   },
-  "homepage": "https://github.com/evilasiojr/COMP229-Assignment1#readme"
+  "homepage": "https://github.com/evilasiojr/COMP229-Assignment1#readme",
+  "devDependencies": {}
 }
